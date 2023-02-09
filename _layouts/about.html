@@ -46,6 +46,12 @@ layout: default
             {%- include news.html %}
           {%- endif %}
 
+          <!-- Experience -->
+          {% if page.experience -%}
+            <h2><a href="{{ '/experience/' | relative_url }}" style="color: inherit;">Experience</a></h2>
+            {%- include experience.html %}
+          {%- endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
