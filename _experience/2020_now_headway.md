@@ -1,6 +1,6 @@
 ---
 layout: post
-fromdate: 2020-10-22 
+fromdate: 2020-06
 todate: now 
 title: HEADWAY任我行无人驾驶车 以及仿真驾驶（威盛电子）
 #inline: true
