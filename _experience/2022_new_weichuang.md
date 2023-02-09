@@ -1,6 +1,6 @@
 ---
 layout: post
-fromdate: 2022-11
+fromdate: 2022.11
 todate: now 
 title: 威盛-唯创叉车安全解决方案 （威盛电子）
 #inline: true
