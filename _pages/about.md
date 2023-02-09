@@ -1,25 +1,32 @@
 ---
 layout: about
-title: about
+#title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+
+#subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: xyz_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>+86-21-3876-4688-856337</p>
+    <p>2537, Jinke Rd </p>
+    <p>Pudong New Area</p>
+    <p>Shanghai, China – 201203</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+#news: true  # includes a list of news items
+#selected_papers: true # includes a list of papers marked as "selected={true}"
+#social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+# Patent:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+[1] Inventor ：徐耀忠 云端运算图像服务器及云端运算图像服务方法 CN201210103500  
+[2] Inventor ：徐耀忠 Cloud-Computing Graphics Server US20130268575A1  
+[3] Inventor ：徐耀忠 雲端運算圖形伺服器及雲端運算圖形伺服方法 TWI599986B  
+[4] Inventor ：徐耀忠 认证方法及认证系统 CN202010291921  
+[5] Inventor ：徐耀忠 Authorization method and authorization system US20210320800A1  
+[6] Inventor ：徐耀忠 認證方法及認證系統 TWI727793B  
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
