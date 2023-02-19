@@ -2,16 +2,12 @@
 layout: post
 fromdate: 2019.07
 todate: 2020.02
-title: 威盛-爱驰智能座舱 （威盛电子）
+title: VIA-AIWAYS smart cockpit（VIA）
 #inline: true
 ---
-## 负责威盛M810与爱驰车机的some ip通讯模块。
+## Responsible for the Some-IP communication protocol between VIA M810 DMS (Driver Monitor System) and AIWAYS Vehicle system.
 
-### 项目简介：
+### Description：
    
-该项目是威盛与爱驰共同开发的项目
-威盛驾驶员安全(DMS)套件与SVS环视套件，与爱驰的车机相结合。
-遵循车规Auto Sar 规范，使用SomeIP，定义并实现通讯接口。
-例如爱驰车机端发送启用关闭环视实现泊车，M810需立刻SVS Steam 流传给车机。
-例如M810则通过视觉识别驾驶员不安全驾驶行为，以及识别手势，实时推送给车机以告知司机。
-相关通讯均通过SomeIP实施。
+Follow the Auto Sar specification, use Some-IP to define and implement the communication interface. 
+Implement interaction between DMS and vehicle system

@@ -52,6 +52,12 @@ layout: default
             {%- include experience.html %}
           {%- endif %}
 
+          <!-- Education -->
+          {% if page.education -%}
+            <h2><a href="{{ '/education/' | relative_url }}" style="color: inherit;">Education</a></h2>
+            {%- include education.html %}
+          {%- endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>

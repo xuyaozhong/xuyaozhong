@@ -2,10 +2,12 @@
 layout: post
 fromdate: 2013
 todate: 2018
-title: CITRIX 与SPICE瘦客户端适配（威盛电子）
+title: Citrix and SPICE thin client development（VIA）
 #inline: true
 ---
-## 为WM8950适配Citrix Client为ZX1000适配 Spice 客户端 
-### 项目简介：
+## Adapt Citrix Client for WM8950, Adapt Spice client for ZX1000
 
-客户要在WonderMedia WM8950使用Citrix Linux Client. Citrix 可以把Video Streaming 重定向到Linux Client。Client则要把重定向的视频流解码，并显示在指定位置（可能全屏显示，也可能不全屏幕）。同时桌面传输格式为jpeg需要通过hardware进行jpeg解码，已提高桌面APP流畅。色彩空间转换则通过Neon加速。
+### Description：
+
+Customers want to use Citrix Linux Client on Wonder Media WM8950. Citrix can redirect Video Streaming to Linux Client. The client needs to decode the video stream and display it at the specified position (maybe full screen or not full screen).  At the same time, the desktop transmission format is jpeg, which needs to be decoded by hardware.
+Color space conversion was accelerated by Neon.

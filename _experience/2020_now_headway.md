@@ -2,16 +2,19 @@
 layout: post
 fromdate: 2020.06
 todate: now 
-title: HEADWAY任我行无人驾驶车 以及仿真驾驶（威盛电子）
+title: VIA HEADWAY DRIVERLESS CAR AND SIMULATED DRIVING（VIA）
 #inline: true
 ---
-##  HEADWAY任我行无人驾驶车 以及仿真驾驶（威盛电子）
+##  VIA HEADWAY DRIVERLESS CAR AND SIMULATED DRIVING（VIA）
 
-负责整体架构设计，负责实现车载Arm系统和车载X86工控机系统的软件开发。   
+Responsible for the overall architecture design, responsible for the software development of Arm system and X86 industrial computer system.   
 
-### 项目简介：
-Headway基于Autoware.AI 1.4/1.3 实现的16线激光雷达无人驾驶车，配以GNSS，单目摄像头，毫米波雷达激光雷达等传感器。车载Arm系统为威盛M810，该系统实现SVS环视，并通过Webrtc 试试与远端实现P2P视频传输，实现低速远程驾驶。同时M810最多能接5个can2.0，车辆底盘/电池管理BMS/毫米波雷达/超声波雷达均通过M810，并经M810解析数据实时上云。X86工控机运行Autoware.AI，搭载16线雷达，调用Open Planner，实现无人驾驶。M810实现多个程序服务，使用线程池，微服务，消息队列方式，解耦并提高吞吐量。
-线程池目的是在CPU低负荷时处理堆积在消息队列中的消息，高负荷时仅把需要读/写的can2.0消息放入消息队列。微服务则是允许按需启用关闭哪些传感器读写，降低Can消息队列负载，还能按需即使启用SVS, WebRTC等服务。满负荷时，CAN消息队列总长度不超过3个消息，且无消息丢失。各服务之间使用zmq  pub/sub模式通讯，进一步解耦，也便于远程登陆使用sub/pub 信息监控和调试。
-云端业务订阅车辆消息会根据业务需求不断变化，因此在项目一开始就指定以Json为标准格式的通讯协议。遵循”开-闭”原则：允许新增字段，但不修改旧的字段，旧的字段在通讯双方都升级新协议后自动废弃。M810的进程间的控制消息也遵循该原则，采用Json，通过zmq保持通讯。这样避免各模块之间由于各自版本升级产生的耦合问题。
-各功能模块耦合低，因此在3年时间内，持续为不同地区的客户定制车辆/以及仿真驾驶平台
-仿真驾驶无需雷达，只需以svlsimulator替代即可。
+### Description：
+Headway based on Autoware.AI 1.4/1.3, using lider/GNSS/Camera/mm wave radar to implement  self-driving。
+
+Using WebRTC to transfer M810(Snapdragon 820) SVS H264 video，to implement remote  driving。
+X86 PC run Autoware.AI, equipped with 16-line radar, and calls Open Planner to realize  
+M810 collects sensor data through 5 can2.0 ports, sensors including vehicle chassis/ BMS/2 mm wave radar/ultrasonic radar.  Sensor service (running on M810) transmits messages to the cloud in real time. 
+Using thread pool to improve throughput, Zmq pub/sub model to implement IPC. 
+JSON as IPC/network data format. Using Open–closed principle in protocol definition.
+
