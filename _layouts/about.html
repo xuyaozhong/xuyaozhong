@@ -46,16 +46,16 @@ layout: default
             {%- include news.html %}
           {%- endif %}
 
-          <!-- Experience -->
-          {% if page.experience -%}
-            <h2><a href="{{ '/experience/' | relative_url }}" style="color: inherit;">Professional Experience</a></h2>
-            {%- include experience.html %}
-          {%- endif %}
-
           <!-- Education -->
           {% if page.education -%}
             <h2><a href="{{ '/education/' | relative_url }}" style="color: inherit;">Education</a></h2>
             {%- include education.html %}
+          {%- endif %}
+
+          <!-- Experience -->
+          {% if page.experience -%}
+            <h2><a href="{{ '/experience/' | relative_url }}" style="color: inherit;">Professional Experience</a></h2>
+            {%- include experience.html %}
           {%- endif %}
 
           <!-- Selected papers -->
